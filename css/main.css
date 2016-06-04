@@ -1,0 +1,133 @@
+nav ul {
+    font-family: 'Poppins', sans-serif;  
+    letter-spacing: 1px;
+    list-style: none;
+    font-weight: 300;
+    padding-top: 1px;
+    font-size: 0.7em;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #437C17;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+hr {
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+    font-weight: 100;
+}
+
+#title {
+    position: absolute;
+    top: 6%;
+    margin: auto;
+    width: 100%;
+}
+
+#subtitle {
+    font-family: 'Poppins', sans-serif;  
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #437C17;
+    margin-top:15px;
+}
+
+#name {
+    font-size: 40px;
+    color: #000000;
+    z-index: 1000;
+}
+
+#header_back {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 5%;
+    background-color: #FFF;
+}
+
+#header {
+    position: fixed;
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 5%;
+    background-color: #FFF;
+    opacity: 0.9;
+}
+
+#left {
+    position: fixed;
+    z-index: 2;
+    left: 0%;
+    width: 3%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+#right {
+    position: fixed;
+    z-index: 2;
+    right: 0%;
+    width: 3%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+#bottom {
+    position: fixed;
+    z-index: 2;
+    bottom: 0%;
+    width: 100%;
+    height: 5%;
+    background-color: #FFF;
+}
+
+#middle {
+    position: absolute;
+    width: 100%;
+    height: 400%;
+}
+
+#everything {
+    position: absolute;
+    top: -53px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    background-image: url("../images/roller.gif"),
+    linear-gradient(
+        #F2F2F2, #FFF, #FFF, #F2F2F2
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+}
