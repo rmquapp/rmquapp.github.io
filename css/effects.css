@@ -34,3 +34,18 @@
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
+
+/*::-webkit-scrollbar {
+    width: 11px;
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFF;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+::-webkit-scrollbar-corner {
+    background: #FFF;
+}*/

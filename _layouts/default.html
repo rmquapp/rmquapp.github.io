@@ -2,29 +2,58 @@
 <html>
     <head>
         <title>{{ page.title }}</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Poppins:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link rel="stylesheet" type="text/css" href="/css/effects.css">
+        <script src="https://use.fontawesome.com/309efcafb9.js"></script>
     </head>
     <body> 
         <div id="header_back"></div>
         <div id="header">
-            <center>
-                <nav class="item">
-                    <ul>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li><a href="/projects">PROJECTS</a></li>
-                        <li><a href="/resume">RESUME</a></li>
-                        <li><a href="/contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </center>
+            <nav class="item">
+                <ul>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/projects">PROJECTS</a></li>
+                    <li><a href="/resume">RESUME</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
         <div id="middle">
             <div id="everything">
                 {{ content }}
+                <div id="about">
+                    <img src="../images/face.png" alt="Just My Face" id="face"></img>
+                    <h2 id="about_title">About Me</h2>
+                    <p class="me" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
+                    <p class="me">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
+                    <hr WIDTH="27%" id="about_hr">
+                    <nav class="icon">
+                        <ul>
+                            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="projects">
+                    <h2 id="projects_title">Projects</h2>
+                    <hr WIDTH="33%" id="projects_hr">
+                    <div>
+                        <h3 id="project1_title" class="project_title">Flying Fingers</h3>
+                        <p id="project1_description">A real-time multiplayer type racing Android app using Google Play games services.</p>
+                    </div>
+                    <div>
+                        <h3 id="project2_title" class="project_title"><a href="http://pasteput.com" target="_blank" style="color:#688788">PastePut.com</a></h3>
+                        <p id="project2_description">Made with Django and Semantic UI, this is a simple pastebin offering syntax highlighting and the ability to create and edit private pastes.</p>
+                        <button id="view"><a href="https://play.google.com/store?hl=en" target="_blank" style="color:#767676"> View on Google Play </a></button>
+                    </div>
+                    <img src="../images/projects.png" alt="Projects" id="projects_image"</img>
+                </div>
             </div>
         </div>
         <div id="left"></div>

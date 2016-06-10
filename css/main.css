@@ -5,6 +5,7 @@ nav ul {
     font-weight: 300;
     padding-top: 1px;
     font-size: 0.7em;
+    text-align: center;
 }
 
 nav ul li {
@@ -14,18 +15,21 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #437C17;
-}
-
-a:hover {
-    text-decoration: none;
+    color: #000;
 }
 
 h1 {
     font-size: 2em;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    color: #000000;
+    color: #547374;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #547374;
+    font-weight: 700;
 }
 
 hr {
@@ -35,33 +39,176 @@ hr {
     background-color:#CACAC8;
 }
 
-p {
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#projects_image {
+    position: absolute;
+    top: 12em;
+    left: 30%;
+    width: 37%;
+}
+
+.project_title {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: #688788;
+}
+
+#project2_title {
+    position: absolute;
+    top: 17.5em;
+    left: 8%;
+}
+
+#project2_description {
+    position: absolute;
+    top: 33em;
+    left: 8%;
+    width: 16%;
+    line-height: 220%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-    font-weight: 100;
+    font-size: 0.88em;
+    font-weight: 300;
+    color: #000;
+}
+
+#view {
+    position: absolute;
+    top: 38.2em;
+    left: 74.8%;
+    width: 13.5em;
+    height: 3em;
+    background: none;
+    border: 0.5px solid #A4C3C4;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #666664;
+}
+
+#view:hover {
+    border: 0.5px solid #688788;
+}
+
+#project1_title {
+    position: absolute;
+    top: 9.2em;
+    left: 74.8%;
+}
+
+#project1_description {
+    position: absolute;
+    top: 20em;
+    left: 74.8%;
+    width: 17%;
+    line-height: 220%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.88em;
+    font-weight: 300;
+    color: #000;
+}
+
+#projects_title {
+    position: absolute;
+    z-index: 2;
+    top: 2.1em;
+    left: 16.6%;
+}
+
+#projects_hr {
+    position: absolute;
+    z-index: 1;
+    top: 11.2em;
+    left: 8%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+#projects {
+    position: relative;
+    top: 67em;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+}
+
+.fa {
+    position: relative;
+    top: 812px;
+    right: 4.2%;
+    color: #000;
+}
+
+#about_title {
+    position: relative;
+    top: 765px;
+    left: 40.5%;
+}
+
+#about_hr {
+    position: relative;
+    top: 800px;
+    left: 4.0%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+.me {
+    position: relative;
+    top: 770px;
+    left: 40.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.88em;
+    font-weight: 300;
+}
+/*
+#centerImage {
+    text-align:center;
+    display:block;
+}
+*/
+#face {
+    position: relative;
+    top: 1080px;
+    left: 16%;
+    width: 250px;
 }
 
 #title {
     position: absolute;
-    top: 6%;
+    top: 7%;
     margin: auto;
     width: 100%;
+    text-align: center;
 }
 
 #subtitle {
     font-family: 'Poppins', sans-serif;  
-    letter-spacing: 2px;
-    font-size: 13px;
-    color: #437C17;
+    letter-spacing: 0.18em;
+    font-size: 0.82em;
+/*    color: #437C17;
+*/
+    font-weight: 400;
+    color: #000;
     margin-top:15px;
 }
 
 #name {
-    font-size: 40px;
-    color: #000000;
+    font-size: 2.5em;
+    color: #547374;
     z-index: 1000;
+}
+
+#item {
+    color: #437C17;
 }
 
 #header_back {
@@ -82,12 +229,13 @@ p {
     width: 100%;
     height: 5%;
     background-color: #FFF;
-    opacity: 0.9;
-}
+/*    opacity: 0.9;
+*/}
 
 #left {
     position: fixed;
     z-index: 2;
+    top: 0%;
     left: 0%;
     width: 3%;
     height: 100%;
@@ -97,6 +245,7 @@ p {
 #right {
     position: fixed;
     z-index: 2;
+    top: 0%;
     right: 0%;
     width: 3%;
     height: 100%;
@@ -115,18 +264,18 @@ p {
 #middle {
     position: absolute;
     width: 100%;
-    height: 400%;
+    height: 500%;
 }
 
 #everything {
     position: absolute;
-    top: -53px;
+    top: -60px;
     left: 0px;
     right: 0px;
     bottom: 0;
     background-image: url("../images/roller.gif"),
     linear-gradient(
-        #F2F2F2, #FFF, #FFF, #F2F2F2
+        #E0EBEB, #F2F2F2 5%, #FFF, #FFF, #FFF, #F2F2F2, #F2F2F2, #F2F2F2
     );
     background-repeat: no-repeat;
     background-size: contain;
