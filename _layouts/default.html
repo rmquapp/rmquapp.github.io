@@ -6,8 +6,12 @@
         <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Poppins:300,400' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <link rel="stylesheet" type="text/css" href="/css/effects.css">
+        <link rel="stylesheet" type="text/css" href="/assets/main.css">
+        <link rel="stylesheet" type="text/css" href="/assets/effects.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.15/jquery.scrollify.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="assets/main.js"></script>
         <script src="https://use.fontawesome.com/309efcafb9.js"></script>
     </head>
     <body> 
@@ -15,21 +19,23 @@
         <div id="header">
             <nav class="item">
                 <ul>
+                    <li><a href="/home">HOME</a></li>
                     <li><a href="/about">ABOUT</a></li>
                     <li><a href="/projects">PROJECTS</a></li>
                     <li><a href="/resume">RESUME</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
         <div id="middle">
             <div id="everything">
+                <div id="menu" class="section" data-section-name="menu">
                 {{ content }}
-                <div id="about">
+                </div>
+                <div id="about" class="section" data-section-name="about">
                     <img src="../images/face.png" alt="Just My Face" id="face"></img>
                     <h2 id="about_title">About Me</h2>
-                    <p class="me" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
-                    <p class="me">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
+                    <p id="about_description1" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
+                    <p id="about_description2">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
                     <hr WIDTH="27%" id="about_hr">
                     <nav class="icon">
                         <ul>
@@ -40,7 +46,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="projects">
+                <div id="projects" class="section" data-section-name="projects">
                     <h2 id="projects_title">Projects</h2>
                     <hr WIDTH="33%" id="projects_hr">
                     <div>
@@ -49,7 +55,7 @@
                     </div>
                     <div>
                         <h3 id="project2_title" class="project_title"><a href="http://pasteput.com" target="_blank" style="color:#688788">PastePut.com</a></h3>
-                        <p id="project2_description">Made with Django and Semantic UI, this is a simple pastebin offering syntax highlighting and the ability to create and edit private pastes.</p>
+                        <p id="project2_description">Made with Django and Semantic UI, this simple pastebin offers syntax highlighting and the ability to create and edit private pastes.</p>
                         <button id="view"><a href="https://play.google.com/store?hl=en" target="_blank" style="color:#767676"> View on Google Play </a></button>
                     </div>
                     <img src="../images/projects.png" alt="Projects" id="projects_image"</img>
