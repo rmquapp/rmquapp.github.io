@@ -10,13 +10,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 35px;
-}
-
-.icon {
-        display: inline;
-
-    margin-right: 5px;
+    margin-right: 3.2em;
 }
 
 a {
@@ -41,8 +35,8 @@ h2 {
 hr {
     height: 0.06em;
     border: none;
-    color: #CACAC8;
-    background-color:#CACAC8;
+    color: #b5b5b4;
+    background-color:#b5b5b4;
 }
 
 body {
@@ -136,7 +130,7 @@ body {
     background-color:#CACAC8;
 }
 
-#projects {
+#projects_section {
     position: relative;
     top: 7em;
     width: 100%;
@@ -144,10 +138,14 @@ body {
     margin: auto;
 }
 
+.icon li {
+    margin-right: 4em;
+}
+
 .icon {
     position: absolute;
-    right: 37.6em;
-    margin-right: 10px;
+    right: 36.3em;
+    display: inline;
 }
 
 .fa {
@@ -189,12 +187,7 @@ body {
     font-size: 0.88em;
     font-weight: 300;
 }
-/*
-#centerImage {
-    text-align:center;
-    display:block;
-}
-*/
+
 #face {
     position: absolute;
     top: 13em;
@@ -202,7 +195,7 @@ body {
     width: 250px;
 }
 
-#about {
+#about_section {
     position: relative;
     top: 10em;
     width: 100%;
@@ -221,11 +214,16 @@ body {
     font-family: 'Poppins', sans-serif;  
     letter-spacing: 0.18em;
     font-size: 0.82em;
-/*    color: #437C17;
-*/
     font-weight: 400;
     color: #000;
-    margin-top:15px;
+    margin-top:3.5%;
+}
+
+#title_hr {
+    position: absolute;
+    top: 62%;
+    left: 41.67%;
+    width: 16.5%;
 }
 
 #name {
@@ -293,12 +291,12 @@ body {
 #everything {
     position: absolute;
     top: -60px;
-    left: 0px;
-    right: 0px;
+    left: 0em;
+    right: 0em;
     bottom: 0;
     background-image: url("../images/roller.gif"),
     linear-gradient(
-        #E0EBEB, #F2F2F2 5%, #FFF, #FFF, #FFF, #F2F2F2, #F2F2F2, #F2F2F2
+        #E0EBEB, #FFF 11%, #FFF, #FFF, #FFF, #F2F2F2, #F2F2F2, #F2F2F2
     );
     background-repeat: no-repeat;
     background-size: contain;

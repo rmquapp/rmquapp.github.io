@@ -26,9 +26,7 @@
 }
 
 .item a:hover::before,
-.item a:hover::after,
-.item a:focus::before,
-.item a:focus::after {
+.item a:hover::after {
     opacity: 1;
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
