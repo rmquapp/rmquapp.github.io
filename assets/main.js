@@ -17,20 +17,26 @@ $(function() {
 });
 
 $(function () {
-    $("#home_s").click(function() {
+    $("#home-s").click(function() {
         $.scrollify.move("#home");
         return false;
     });
-    $("#about_s").click(function() {
+    $("#about-s").click(function() {
         $.scrollify.move("#about");
         return false;
     });
-    $("#projects_s").click(function() {
+    $("#projects-s").click(function() {
         $.scrollify.move("#projects");
         return false;
     });
-    $("#resume_s").click(function() {
+    $("#resume-s").click(function() {
         $.scrollify.move("#resume");
         return false;
     });
+});
+
+$(function() {
+    if (window.location.hash == "#resume") {
+        $.scrollify({ setHeights: false });
+    }
 });

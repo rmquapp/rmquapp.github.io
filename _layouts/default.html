@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>{{ page.title }}</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Poppins:300,400' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -15,50 +15,85 @@
         <script src="https://use.fontawesome.com/309efcafb9.js"></script>
     </head>
     <body> 
-        <div id="header_back"></div>
+        <div id="header-back"></div>
         <div id="header">
             <nav class="item">
                 <ul>
-                    <li><a href="./" id="home_s">HOME</a></li>
-                    <li><a href="./" id="about_s">ABOUT</a></li>
-                    <li><a href="./" id="projects_s">PROJECTS</a></li>
-                    <li><a href="./" id="resume_s">RESUME</a></li>
+                    <li><a href="./" id="home-s">HOME</a></li>
+                    <li><a href="./" id="about-s">ABOUT</a></li>
+                    <li><a href="./" id="projects-s">PROJECTS</a></li>
+                    <li><a href="./" id="resume-s">RESUME</a></li>
                 </ul>
             </nav>
         </div>
         <div id="middle">
             <div id="everything">
-                <div id="home_section" class="section" data-section-name="home">
-                {{ content }}
+                <div id="home-section" class="section" data-section-name="home">
+                    <div class="title" id="title">
+                        <h1 id="name" style="font-weight:300">Rachel Quapp</h1>
+                            <hr id="title-hr">
+                        <p id="subtitle">SOFTWARE DEVELOPER</p>
+                    </div>
                 </div>
-                <div id="about_section" class="section" data-section-name="about">
+                <div id="about-section" class="section" data-section-name="about">
                     <img src="../images/face.png" alt="Just My Face" id="face"></img>
-                    <h2 id="about_title">About Me</h2>
-                    <p id="about_description1" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
-                    <p id="about_description2">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
-                    <hr width="27%" id="about_hr">
+                    <h2 id="about-title">About Me</h2>
+                    <p id="about-description1" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
+                    <p id="about-description2">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
+                    <hr width="27%" id="about-hr">
                     <nav class="icon">
                         <ul>
-                            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                            <li><i class="fa list fa-linkedin" aria-hidden="true"></i></li>
+                            <li><i class="fa list fa-facebook" aria-hidden="true"></i></li>
+                            <li><i class="fa list fa-github" aria-hidden="true"></i></li>
+                            <li><i class="fa list fa-envelope" aria-hidden="true"></i></li>
                         </ul>
                     </nav>
                 </div>
-                <div id="projects_section" class="section" data-section-name="projects">
-                    <h2 id="projects_title">Projects</h2>
-                    <hr width="33%" id="projects_hr">
+                <div id="projects-section" class="section" data-section-name="projects">
+                    <h2 id="projects-title">Projects</h2>
+                    <hr width="25.2%" id="projects-hr">
                     <div>
-                        <h3 id="project1_title" class="project_title">Flying Fingers</h3>
-                        <p id="project1_description">A real-time multiplayer type racing Android app using Google Play games services.</p>
+                        <h3 id="project1-title" class="project-titles">FLYING FINGERS</h3>
+                        <p id="project1-description">A real-time multiplayer type racing Android app using Google Play games services.</p>
                     </div>
                     <div>
-                        <h3 id="project2_title" class="project_title"><a href="http://pasteput.com" target="_blank" style="color:#688788">PastePut.com</a></h3>
-                        <p id="project2_description">Made with Django and Semantic UI, this simple pastebin offers syntax highlighting and the ability to create and edit private pastes.</p>
-                        <button id="view"><a href="https://play.google.com/store?hl=en" target="_blank" style="color:#767676"> View on Google Play </a></button>
+                        <h3 id="project2-title" class="project-titles"><a href="http://pasteput.com" target="-blank" style="color:#688788">PASTEPUT.COM</a></h3>
+                        <p id="project2-description">Made with Django and Semantic UI, this simple pastebin offers syntax highlighting and the ability to create and edit private pastes.</p>
+                        <button id="view"><a href="https://play.google.com/store?hl=en" target="-blank" style="color:#767676"> View on Google Play </a></button>
                     </div>
-                    <img src="../images/projects.png" alt="Projects" id="projects_image"</img>
+                    <img src="../images/projects.png" alt="Projects" id="projects-image"</img>
+                </div>
+                <div id="resume-section" class="section" data-section-name="resume">
+                    <h2 id="resume-title">Resume</h2>
+                    <div id="education-container">
+                        <div class="row">
+                            <div class="col-3">
+                                <h3 id="education-title" class="resume-titles">EDUCATION &nbsp; &nbsp;
+                                <span><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i><span></h3>
+                                <hr width="56%" id="education-hr">
+                                <br><br>
+                                <h4 id="uofc" class="resume-subtitles">University of Calgary</h4>
+                                <p class="timeline">2012 - 2017 (expected)</p>
+                            </div>
+                            <div class="col-6">
+                                <br><br><br><br><br><br>
+                                <h4 class="resume-description-header">BSC in Computer Science</h4>
+                                <p class="resume-description">On course to graduate with Honors, a concentration in Software Engineering, and a GPA of 3.8.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <h4 id="hca" class="resume-subtitles">Heritage Christian Academy</h4>
+                                <p class="timeline">2011</p>
+                            </div>
+                            <div class="col-6">
+                                <h4 class="resume-description-header">High School Diploma</h4>
+                                <p class="resume-description">Governor General’s Award recipient and high school yearbook editor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br><br><br><br><br><br>
                 </div>
             </div>
         </div>

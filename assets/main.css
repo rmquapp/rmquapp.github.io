@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 nav ul {
     font-family: 'Poppins', sans-serif;  
     letter-spacing: 1px;
@@ -9,13 +13,22 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
+    left: 1.3em;
     display: inline;
-    margin-right: 3.2em;
+    margin-right: 4em;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: black;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
 }
 
 h1 {
@@ -40,45 +53,118 @@ hr {
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-#projects_image {
+.fa-graduation-cap {
+    color: #B8D7D8;
+}
+
+#education-hr {
     position: absolute;
-    top: 12em;
-    left: 30%;
-    width: 37%;
+    z-index: 1;
+    top: 4.5em;
+    left: 0.9%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
 }
 
-.project_title {
-    font-size: 1.4em;
+.resume-description {
+    font-size: 0.85em;
+    line-height: 1.7;
+    margin-top: -0.8em;
+    width: 67%;
+}
+
+.resume-description-header {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #547374;
+}
+
+.timeline {
+    font-size: 0.8em;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    line-height: 0em;
+}
+
+#education-container {
+    position: absolute;
+    top: 28%;
+    left: 22%;
+    width: 100%;
+}
+
+.resume-subtitles {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #547374;
+}
+
+.resume-titles {
+    font-size: 1.3em;
+    letter-spacing: 0.07em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+#resume-title {
+    position: absolute;
+    top: 1.3em;
+    left: 41.5%;
+}
+
+#resume-section {
+    position: relative;
+    top: 20em;
+    width: 100%;
+    margin: auto;
+}
+
+#projects-image {
+    position: absolute;
+    top: 9em;
+    left: 30%;
+    width: 38%;
+}
+
+.project-titles {
+    letter-spacing: 0.07em;
+    font-size: 1em;
+    font-weight: 300;
     font-family: 'Quicksand', sans-serif;
-    color: #688788;
+    color: #547374;
 }
 
-#project2_title {
+#project2-title {
     position: absolute;
-    top: 17.5em;
-    left: 8%;
+    top: 22.6em;
+    left: 8.3%;
 }
 
-#project2_description {
+#project2-description {
     position: absolute;
-    top: 33em;
-    left: 8%;
+    top: 29.5em;
+    left: 8.3%;
     width: 16%;
     line-height: 220%;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.88em;
     font-weight: 300;
-    color: #000;
+    color: black;
 }
 
 #view {
     position: absolute;
-    top: 38.2em;
+    top: 31.5em;
     left: 74.8%;
     width: 13.5em;
     height: 3em;
@@ -94,45 +180,46 @@ body {
     border: 0.5px solid #688788;
 }
 
-#project1_title {
+#project1-title {
     position: absolute;
-    top: 9.2em;
+    top: 10.2em;
     left: 74.8%;
 }
 
-#project1_description {
+#project1-description {
     position: absolute;
-    top: 20em;
+    top: 15.5em;
     left: 74.8%;
     width: 17%;
     line-height: 220%;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.88em;
     font-weight: 300;
-    color: #000;
+    color: black;
 }
 
-#projects_title {
+#projects-title {
     position: absolute;
     z-index: 2;
-    top: 2.1em;
-    left: 16.6%;
+    top: 0.79em;
+    left: 8.3%;
+    color: #547374;
 }
 
-#projects_hr {
+#projects-hr {
     position: absolute;
     z-index: 1;
-    top: 11.2em;
-    left: 8%;
+    top: 8.3em;
+    left: 8.5%;
     height: 0.06em;
     border: none;
     color: #CACAC8;
     background-color:#CACAC8;
 }
 
-#projects_section {
+#projects-section {
     position: relative;
-    top: 7em;
+    top: 9em;
     width: 100%;
     height: 30%;
     margin: auto;
@@ -144,23 +231,23 @@ body {
 
 .icon {
     position: absolute;
-    right: 36.3em;
+    left: 29em;
     display: inline;
 }
 
-.fa {
+.fa.list {
     position: absolute;
-    top: 40.7em;
-    color: #000;
+    top: 39.3em;
+    color: black;
 }
 
-#about_title {
+#about-title {
     position: absolute;
     top: 3.9em;
     left: 40.5%;
 }
 
-#about_hr {
+#about-hr {
     position: absolute;
     top: 26em;
     left: 40.5%;
@@ -170,7 +257,7 @@ body {
     background-color:#CACAC8;
 }
 
-#about_description1 {
+#about-description1 {
     position: absolute;
     top: 17em;
     left: 40.5%;
@@ -179,7 +266,7 @@ body {
     font-weight: 300;  
 }
 
-#about_description2 {
+#about-description2 {
     position: absolute;
     top: 25.3em;
     left: 40.5%;
@@ -190,12 +277,12 @@ body {
 
 #face {
     position: absolute;
-    top: 13em;
+    top: 12.7em;
     left: 16%;
     width: 250px;
 }
 
-#about_section {
+#about-section {
     position: relative;
     top: 10em;
     width: 100%;
@@ -214,12 +301,12 @@ body {
     font-family: 'Poppins', sans-serif;  
     letter-spacing: 0.18em;
     font-size: 0.82em;
-    font-weight: 400;
-    color: #000;
+    font-weight: 300;
+    color: black;
     margin-top:3.5%;
 }
 
-#title_hr {
+#title-hr {
     position: absolute;
     top: 62%;
     left: 41.67%;
@@ -232,14 +319,14 @@ body {
     z-index: 1000;
 }
 
-#header_back {
+#header-back {
     position: absolute;
     z-index: 2;
     left: 0%;
     top: 0%;
     width: 100%;
     height: 5%;
-    background-color: #FFF;
+    background-color: white;
 }
 
 #header {
@@ -249,9 +336,8 @@ body {
     top: 0%;
     width: 100%;
     height: 5%;
-    background-color: #FFF;
-/*    opacity: 0.9;
-*/}
+    background-color: white;
+}
 
 #left {
     position: fixed;
@@ -260,7 +346,7 @@ body {
     left: 0%;
     width: 3%;
     height: 100%;
-    background-color: #FFF;
+    background-color: white;
 }
 
 #right {
@@ -270,7 +356,7 @@ body {
     right: 0%;
     width: 3%;
     height: 100%;
-    background-color: #FFF;
+    background-color: white;
 }
 
 #bottom {
@@ -279,7 +365,7 @@ body {
     bottom: 0%;
     width: 100%;
     height: 5%;
-    background-color: #FFF;
+    background-color: white;
 }
 
 #middle {
@@ -296,8 +382,32 @@ body {
     bottom: 0;
     background-image: url("../images/roller.gif"),
     linear-gradient(
-        #E0EBEB, #FFF 11%, #FFF, #FFF, #FFF, #F2F2F2, #F2F2F2, #F2F2F2
+        #E0EBEB, white 11%, white, white, white, white, #F2F2F2, #F2F2F2
     );
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+[class*="col-"] {
+    float: left;
+    padding: 12px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
