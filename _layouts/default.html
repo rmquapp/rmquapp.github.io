@@ -28,31 +28,47 @@
         </div>
         <div id="middle">
             <div id="everything">
-                <div id="home-section" class="section" data-section-name="home">
+                <section id="home-section" class="section" data-section-name="home">
                     <div class="title" id="title">
                         <h1 id="name" style="font-weight:300">Rachel Quapp</h1>
                             <hr id="title-hr">
                         <p id="subtitle">SOFTWARE DEVELOPER</p>
                     </div>
-                </div>
-                <div id="about-section" class="section" data-section-name="about">
+                </section>
+                <section id="about-section" class="section" data-section-name="about">
                     <img src="../images/face.png" alt="Just My Face" id="face"></img>
                     <h2 id="about-title">About Me</h2>
-                    <p id="about-description1" style="font-size:1.13em">I have one year left of Computer Science at the University of Calgary.</p>
-                    <p id="about-description2">I'm looking for work starting May 2017 and I'd love to hear from you!</p>
+                    <p id="about-description1" style="font-size:1.1em">I have one year left of Computer Science at the University of Calgary.</p>
+                    <p id="about-description2">I'm looking for work starting May 2017 and would love to hear from you!</p>
                     <hr width="27%" id="about-hr">
                     <nav class="icon">
                         <ul>
-                            <li><i class="fa list fa-linkedin" aria-hidden="true"></i></li>
-                            <li><i class="fa list fa-facebook" aria-hidden="true"></i></li>
-                            <li><i class="fa list fa-github" aria-hidden="true"></i></li>
-                            <li><i class="fa list fa-envelope" aria-hidden="true"></i></li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="-blank">
+                                    <i class="fa list fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://facebook.com/doreen.quapp" target="-blank">
+                                    <i class="fa list fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/rmquapp" target="-blank">
+                                    <i class="fa list fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:rmquapp@gmail.com" target="_top">
+                                    <i class="fa list fa-envelope" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
-                </div>
-                <div id="projects-section" class="section" data-section-name="projects">
+                </section>
+                <section id="projects-section" class="section" data-section-name="projects">
                     <h2 id="projects-title">Projects</h2>
-                    <hr width="25.2%" id="projects-hr">
+                    <hr width="24.7%" id="projects-hr">
                     <div>
                         <h3 id="project1-title" class="project-titles">FLYING FINGERS</h3>
                         <p id="project1-description">A real-time multiplayer type racing Android app using Google Play games services.</p>
@@ -63,23 +79,58 @@
                         <button id="view"><a href="https://play.google.com/store?hl=en" target="-blank" style="color:#767676"> View on Google Play </a></button>
                     </div>
                     <img src="../images/projects.png" alt="Projects" id="projects-image"</img>
-                </div>
-                <div id="resume-section" class="section" data-section-name="resume">
+                </section>
+
+                <section id="resume-section" class="section" data-section-name="resume">
+                    <hr width="23.5%" id="top-left-hr" class="diag-hr">
+                    <hr width="23.5%" id="bottom-right-hr" class="diag-hr">
+                    <img src="../images/quotes.png" alt="Quotation Marks" id="quote-marks"></img>
                     <h2 id="resume-title">Resume</h2>
-                    <div id="education-container">
+                    <p id="quote">The supreme accomplishment is to blur the line between work and play.<p>
+                    <p id="author">- Arnold J Toynbee<p>
+                    <div id="work-container">
+                        <h3 id="work-title" class="resume-titles">WORK EXPERIENCE &nbsp; &nbsp;
+                        <span><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i><span></h3>
+                        <hr width="63%" id="work-hr">
                         <div class="row">
                             <div class="col-3">
-                                <h3 id="education-title" class="resume-titles">EDUCATION &nbsp; &nbsp;
-                                <span><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i><span></h3>
-                                <hr width="56%" id="education-hr">
+                                <br><br>
+                                <h4 id="pason" class="resume-subtitles">Pason Systems</h4>
+                                <p class="timeline">May 2015 - August 2016</p>
+                            </div>
+                            <div class="col-8">
+                                <br><br>
+                                <h4 class="resume-description-header">Software Developer Intern</h4>
+                                <p class="resume-description">For the first half of my internship, I primarily oversaw Pason's sanity test procedure, which involved troubleshooting, failure analysis, and adapting the framework, test cases, and physical setup to facilitate a better pass rate.</p>
+                                <p class="resume-description">The second half was spent making improvements to the build infrastructure, including significant reduction of build times and technical debt, metrics reporting and visualization, componentization, and the investigation and resolution of issues.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <h4 id="hca" class="resume-subtitles">Full Circle Data Services</h4>
+                                <p class="timeline">May 2013 - August 2013</p>
+                            </div>
+                            <div class="col-8">
+                                <h4 class="resume-description-header">Junior Software Developer</h4>
+                                <p class="resume-description">As a summer student, I created applications in Visual Studio and maintained, tested, and documented existing products.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="education-container">
+                        <h3 id="education-title" class="resume-titles">EDUCATION &nbsp; &nbsp;
+                        <span><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i><span></h3>
+                        <hr width="63%" id="education-hr">
+                        <div class="row">
+                            <div class="col-3">
                                 <br><br>
                                 <h4 id="uofc" class="resume-subtitles">University of Calgary</h4>
                                 <p class="timeline">2012 - 2017 (expected)</p>
                             </div>
-                            <div class="col-6">
-                                <br><br><br><br><br><br>
+                            <div class="col-8">
+                                <br><br>
                                 <h4 class="resume-description-header">BSC in Computer Science</h4>
-                                <p class="resume-description">On course to graduate with Honors, a concentration in Software Engineering, and a GPA of 3.8.</p>
+                                <p class="resume-description">On course to graduate with Honors, a concentration in Software Engineering, and a GPA of 3.8. My classes have given me experience with Java, Python, C, databases, compiler construction, and algorithm design.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -87,14 +138,13 @@
                                 <h4 id="hca" class="resume-subtitles">Heritage Christian Academy</h4>
                                 <p class="timeline">2011</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-8">
                                 <h4 class="resume-description-header">High School Diploma</h4>
                                 <p class="resume-description">Governor General’s Award recipient and high school yearbook editor.</p>
                             </div>
                         </div>
                     </div>
-                    <br><br><br><br><br><br><br><br>
-                </div>
+                </section>
             </div>
         </div>
         <div id="left"></div>

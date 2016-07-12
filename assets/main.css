@@ -48,8 +48,8 @@ h2 {
 hr {
     height: 0.06em;
     border: none;
-    color: #b5b5b4;
-    background-color:#b5b5b4;
+    color: #D3D3D2;
+    background-color:#D3D3D2;
 }
 
 body {
@@ -57,19 +57,68 @@ body {
     overflow-y: scroll;
 }
 
-.fa-graduation-cap {
+#top-left-hr {
+    position: absolute;
+    top: 14em;
+    left: 22.6em;
+}
+
+#bottom-right-hr {
+    position: absolute;
+    top: 30.9em;
+    left: 36.4em;
+}
+
+.diag-hr {
+    transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    color: #D3D3D2;
+    background-color:#D3D3D2;
+}
+
+.fa-briefcase {
     color: #B8D7D8;
 }
 
 #education-hr {
     position: absolute;
-    z-index: 1;
-    top: 4.5em;
     left: 0.9%;
     height: 0.06em;
     border: none;
     color: #CACAC8;
     background-color:#CACAC8;
+}
+
+#education-title {
+    position: absolute;
+    top: -21%;
+}
+
+#education-container {
+    position: absolute;
+    top: 182%;
+    left: 18%;
+    width: 100%;
+}
+
+.fa-graduation-cap {
+    color: #B8D7D8;
+}
+
+#work-hr {
+    position: absolute;
+    left: 0.9%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+#work-title {
+    position: absolute;
+    top: -16%;
 }
 
 .resume-description {
@@ -94,10 +143,10 @@ body {
     line-height: 0em;
 }
 
-#education-container {
+#work-container {
     position: absolute;
-    top: 28%;
-    left: 22%;
+    top: 105%;
+    left: 18%;
     width: 100%;
 }
 
@@ -109,6 +158,8 @@ body {
 }
 
 .resume-titles {
+    position: absolute;
+    left: 0.6em;
     font-size: 1.3em;
     letter-spacing: 0.07em;
     font-weight: 300;
@@ -116,9 +167,37 @@ body {
     color: black;
 }
 
+#author {
+    position: absolute;
+    top: 33.5em;
+    left: 37.5%;
+    width: 23%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#quote-marks {
+    position: absolute;
+    top: 23em;
+    left: 29.5%;
+    width: 14%;
+}
+
+#quote {
+    position: absolute;
+    top: 22.8em;
+    left: 37.5%;
+    width: 23%;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+}
+
 #resume-title {
     position: absolute;
-    top: 1.3em;
+    top: 4.7em;
     left: 41.5%;
 }
 
@@ -126,12 +205,13 @@ body {
     position: relative;
     top: 20em;
     width: 100%;
+    padding-bottom: 50em;
     margin: auto;
 }
 
 #projects-image {
     position: absolute;
-    top: 9em;
+    top: 9.3em;
     left: 30%;
     width: 38%;
 }
@@ -139,20 +219,20 @@ body {
 .project-titles {
     letter-spacing: 0.07em;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Quicksand', sans-serif;
     color: #547374;
 }
 
 #project2-title {
     position: absolute;
-    top: 22.6em;
+    top: 23em;
     left: 8.3%;
 }
 
 #project2-description {
     position: absolute;
-    top: 29.5em;
+    top: 29.9em;
     left: 8.3%;
     width: 16%;
     line-height: 220%;
@@ -164,7 +244,7 @@ body {
 
 #view {
     position: absolute;
-    top: 31.5em;
+    top: 32.2em;
     left: 74.8%;
     width: 13.5em;
     height: 3em;
@@ -182,13 +262,13 @@ body {
 
 #project1-title {
     position: absolute;
-    top: 10.2em;
+    top: 10.7em;
     left: 74.8%;
 }
 
 #project1-description {
     position: absolute;
-    top: 15.5em;
+    top: 16em;
     left: 74.8%;
     width: 17%;
     line-height: 220%;
@@ -209,12 +289,10 @@ body {
 #projects-hr {
     position: absolute;
     z-index: 1;
-    top: 8.3em;
+    top: 8.8em;
     left: 8.5%;
     height: 0.06em;
     border: none;
-    color: #CACAC8;
-    background-color:#CACAC8;
 }
 
 #projects-section {
@@ -237,13 +315,13 @@ body {
 
 .fa.list {
     position: absolute;
-    top: 39.3em;
+    top: 38.8em;
     color: black;
 }
 
 #about-title {
     position: absolute;
-    top: 3.9em;
+    top: 4.1em;
     left: 40.5%;
 }
 
@@ -253,13 +331,11 @@ body {
     left: 40.5%;
     height: 0.06em;
     border: none;
-    color: #CACAC8;
-    background-color:#CACAC8;
 }
 
 #about-description1 {
     position: absolute;
-    top: 17em;
+    top: 17.8em;
     left: 40.5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.88em;
@@ -291,7 +367,7 @@ body {
 
 #title {
     position: absolute;
-    top: 7%;
+    top: 6.2%;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -308,9 +384,11 @@ body {
 
 #title-hr {
     position: absolute;
-    top: 62%;
+    top: 63%;
     left: 41.67%;
-    width: 16.5%;
+    width: 16.8%;
+    color: #ABABAA;
+    background-color:#ABABAA;
 }
 
 #name {
@@ -371,18 +449,19 @@ body {
 #middle {
     position: absolute;
     width: 100%;
-    height: 500%;
+    height: 608%;
 }
 
 #everything {
     position: absolute;
-    top: -60px;
+    top: -21px;
+/*    top: -53px; */
     left: 0em;
     right: 0em;
     bottom: 0;
-    background-image: url("../images/roller.gif"),
+    background-image: url("../images/rollercoaster.gif"),
     linear-gradient(
-        #E0EBEB, white 11%, white, white, white, white, #F2F2F2, #F2F2F2
+        #E0EBEB, white 9%, white, white, white, white, #F2F2F2, #F2F2F2
     );
     background-repeat: no-repeat;
     background-size: contain;
@@ -401,7 +480,7 @@ body {
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
+.col-3 {width: 20%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}

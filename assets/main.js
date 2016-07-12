@@ -1,11 +1,11 @@
-$(function() {
+ $(function() {
     $.scrollify({
-        section : ".section",
-        sectionName : "section-name",
-        interstitialSection : "",
+        section: ".section",
+        sectionName: "section-name",
+        interstitialSection: "",
         easing: "easeOutExpo",
         scrollSpeed: 1100,
-        offset : 0,
+        offset: 0,
         scrollbars: true,
         standardScrollElements: "",
         setHeights: true,
@@ -33,10 +33,4 @@ $(function () {
         $.scrollify.move("#resume");
         return false;
     });
-});
-
-$(function() {
-    if (window.location.hash == "#resume") {
-        $.scrollify({ setHeights: false });
-    }
 });
