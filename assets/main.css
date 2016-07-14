@@ -55,6 +55,7 @@ hr {
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 100%;
 }
 
 img {
@@ -126,7 +127,7 @@ img {
 }
 
 .resume-description {
-    font-size: 0.85em;
+    font-size: 0.9em;
     line-height: 1.7;
     margin-top: -0.8em;
     width: 67%;
@@ -448,6 +449,7 @@ img {
     width: 100%;
     height: 5%;
     background-color: white;
+    visibility: hidden;
 }
 
 #middle {
@@ -507,3 +509,27 @@ img {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    body {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    body {
+        font-size: 75%;
+    }
+}
