@@ -34,3 +34,18 @@ $(function () {
         return false;
     });
 });
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if (window.location.hash == "#resume") {
+            setTimeout(function() {
+                document.getElementById("bottom").style.visibility = "visible";
+            }, 400);
+        }
+        else {
+            setTimeout(function() {
+                document.getElementById("bottom").style.visibility = "hidden";
+            }, 5);
+        }
+    });
+});
