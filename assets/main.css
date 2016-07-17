@@ -7,7 +7,6 @@ nav ul {
     letter-spacing: 0.18em;
     list-style: none;
     font-weight: 300;
-    padding-top: 1px;
     font-size: 0.7em;
 }
 
@@ -463,7 +462,7 @@ img {
     z-index: 2;
     width: 100%;
     height: 100%;
-    bottom: -26.8%;
+    bottom: -27.5%;
     background-image: url("../images/rollercoaster.gif");
     background-repeat: no-repeat;
     background-size: contain;
@@ -506,37 +505,25 @@ img {
 
 @media (min-width: 1100px) {
     body {
-        font-size: 115%;
-    }
-    #gif {
-        bottom: -23%;
+        font-size: 108%;
     }
 }
 
 @media (min-width: 1300px) {
     body {
-        font-size: 130%;
-    }
-    #gif {
-        bottom: -20%;
+        font-size: 118%;
     }
 }
 
 @media (min-width: 1550px) {
     body {
-        font-size: 135%;
-    }
-    #gif {
-        bottom: -18%;
+        font-size: 123%;
     }
 }
 
 @media (min-width: 1920px) {
     body {
-        font-size: 150%;
-    }
-    #gif {
-        bottom: -16%;
+        font-size: 128%;
     }
 }
 
@@ -561,5 +548,8 @@ only screen and (           min-resolution: 192dpi) and (min-device-width: 1440p
 only screen and (            min-resolution: 2dppx) and (min-device-width: 1440px) {
     body {
         font-size: 110%;
+    }
+    #gif {
+        bottom: -25%;   
     }
 }

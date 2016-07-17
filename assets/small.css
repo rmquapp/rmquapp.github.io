@@ -7,13 +7,12 @@ nav ul {
     letter-spacing: 0.18em;
     list-style: none;
     font-weight: 300;
-    padding-top: 1px;
     font-size: 0.7em;
 }
 
 .item {
     position: relative;
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     float: center;
 }
