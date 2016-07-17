@@ -507,11 +507,17 @@ img {
     body {
         font-size: 108%;
     }
+    #gif {
+        bottom: -23%;
+    }
 }
 
 @media (min-width: 1300px) {
     body {
         font-size: 118%;
+    }
+    #gif {
+        bottom: -20%;
     }
 }
 
@@ -519,11 +525,17 @@ img {
     body {
         font-size: 123%;
     }
+    #gif {
+        bottom: -17%;
+    }
 }
 
 @media (min-width: 1920px) {
     body {
         font-size: 128%;
+    }
+    #gif {
+        bottom: -15%;
     }
 }
 
@@ -536,6 +548,9 @@ only screen and (           min-resolution: 192dpi) and (min-device-width: 1025p
 only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px) {
     body {
         font-size: 100%;
+    }
+    #gif {
+        bottom: -27.5%;
     }
 }
 
@@ -550,6 +565,6 @@ only screen and (            min-resolution: 2dppx) and (min-device-width: 1440p
         font-size: 110%;
     }
     #gif {
-        bottom: -25%;   
+        bottom: -25%;
     }
 }
