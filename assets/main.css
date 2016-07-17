@@ -4,17 +4,20 @@
 
 nav ul {
     font-family: 'Poppins', sans-serif;  
-    letter-spacing: 1px;
+    letter-spacing: 0.18em;
     list-style: none;
     font-weight: 300;
     padding-top: 1px;
     font-size: 0.7em;
+}
+
+.item {
+    position: relative;
+    left: 1.5em;
     text-align: center;
 }
 
 nav ul li {
-    position: relative;
-    left: 1.3em;
     display: inline;
     margin-right: 4em;
 }
@@ -249,16 +252,19 @@ img {
 
 #view {
     position: absolute;
-    top: 32.2em;
+    top: 48%;
     left: 74.8%;
-    width: 13.5em;
-    height: 3em;
+    width: 12.5em;
+    height: 2.7em;
+    line-height: 2.7em;
     background: none;
     border: 0.5px solid #A4C3C4;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 0.8em;
     color: #666664;
+    text-align: center;
 }
 
 #view:hover {
@@ -308,66 +314,60 @@ img {
     margin: auto;
 }
 
-.icon li {
-    margin-right: 4em;
-}
-
-.icon {
-    position: absolute;
-    left: 29em;
-    display: inline;
-}
-
 .fa.list {
-    position: absolute;
-    top: 38.8em;
     color: black;
 }
 
-#about-title {
+.icon ul, .icon li {
+    margin: 0;
+    padding: 0;
+    margin-right: 4em;
+    float: left;
+}
+
+#about-container {
     position: absolute;
-    top: 4.1em;
-    left: 40.5%;
+    top: 10.9em;
+    left: 17%;
+    width: 99%;
+}
+
+#about-content {
+    position: absolute;
+    left: 24%;
+    width: 100%;
+}
+
+#about-title {
+    text-align: left;
 }
 
 #about-hr {
     position: absolute;
-    top: 26em;
-    left: 40.5%;
     height: 0.06em;
     border: none;
 }
 
-#about-description1 {
-    position: absolute;
-    top: 17.8em;
-    left: 40.5%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.88em;
-    font-weight: 300;  
-}
-
-#about-description2 {
-    position: absolute;
-    top: 25.3em;
-    left: 40.5%;
+#about-description {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.88em;
     font-weight: 300;
+    line-height: 1.2em;
+    text-align: left; 
 }
 
 #face {
-    position: absolute;
-    top: 12.7em;
-    left: 16%;
-    width: 250px;
+    position: relative;
+    top: 1.7em;
+    width: 15.5em;
+    float: left;
 }
 
 #about-section {
     position: relative;
     top: 10em;
     width: 100%;
-    height: 30%;
+    height: 100%;
 }
 
 #title {
@@ -458,12 +458,6 @@ img {
     height: 612.5%;
 }
 
-/*#gif {
-    position: fixed;
-    width: 100%;
-    bottom: 4.5%;
-}*/
-
 #gif {
     position: absolute;
     z-index: 2;
@@ -510,26 +504,62 @@ img {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media screen and (min-width: 1920px) {
+@media (min-width: 1100px) {
+    body {
+        font-size: 115%;
+    }
+    #gif {
+        bottom: -23%;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        font-size: 130%;
+    }
+    #gif {
+        bottom: -20%;
+    }
+}
+
+@media (min-width: 1550px) {
+    body {
+        font-size: 135%;
+    }
+    #gif {
+        bottom: -18%;
+    }
+}
+
+@media (min-width: 1920px) {
     body {
         font-size: 150%;
     }
-}
-
-@media screen and (min-width: 1550px) {
-    body {
-        font-size: 125%;
+    #gif {
+        bottom: -16%;
     }
 }
 
-@media (min-width: 1200px) {
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px),
+only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px),
+only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px),
+only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px) {
     body {
         font-size: 100%;
     }
 }
 
-@media only screen and (max-width:480px){
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1440px),
+only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1440px),
+only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1440px),
+only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1440px),
+only screen and (           min-resolution: 192dpi) and (min-device-width: 1440px),
+only screen and (            min-resolution: 2dppx) and (min-device-width: 1440px) {
     body {
-        font-size: 75%;
+        font-size: 110%;
     }
 }

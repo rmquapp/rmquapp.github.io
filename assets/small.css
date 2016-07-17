@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    font-family: 'Poppins', sans-serif;  
+    letter-spacing: 0.18em;
+    list-style: none;
+    font-weight: 300;
+    padding-top: 1px;
+    font-size: 0.7em;
+}
+
+.item {
+    position: relative;
+    text-align:center;
+    margin: 0 auto;
+    float: center;
+}
+
+nav ul li {
+    position: relative;
+    right: 1.8em;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #547374;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #547374;
+    font-weight: 700;
+}
+
+hr {
+    height: 0.06em;
+    border: none;
+    color: #D3D3D2;
+    background-color:#D3D3D2;
+}
+
+#middle {
+    position: absolute;
+    width: 100%;
+    height: 600%;
+}
+
+#everything {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        #E0EBEB, white 13%, white, white, white, white, #F2F2F2, #F2F2F2
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    font-size: 85%;
+}
+
+img {
+    max-width: 100%
+}
+
+#top-left-hr {
+    position: relative;
+    left: 1.6em;
+}
+
+#bottom-right-hr {
+    position: relative;
+    left: 1.4em;
+}
+
+.diag-hr {
+    transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    color: #D3D3D2;
+    background-color:#D3D3D2;
+}
+
+.fa-briefcase {
+    color: #B8D7D8;
+}
+
+#education-hr {
+    position: relative;
+    left: 0.9%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+#education-title {
+    position: relative;
+    top: -21%;
+}
+
+#education-container {
+/*    position: absolute;
+    top: 182%;*/
+    width: 100%;
+}
+
+.fa-graduation-cap {
+    color: #B8D7D8;
+}
+
+#work-hr {
+    position: relative;
+    left: 0.9%;
+    height: 0.06em;
+    border: none;
+    color: #CACAC8;
+    background-color:#CACAC8;
+}
+
+#work-title {
+    position: relative;
+    top: -16%;
+}
+
+.resume-description {
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-top: -0.8em;
+    width: 67%;
+}
+
+.resume-description-header {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #547374;
+}
+
+.timeline {
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    line-height: 0em;
+}
+
+#work-container {
+/*    position: absolute;
+    top: 105%;*/
+    width: 100%;
+}
+
+.resume-subtitles {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #547374;
+}
+
+.resume-titles {
+    position: relative;
+    left: 0.6em;
+    font-size: 1.3em;
+    letter-spacing: 0.07em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+#author {
+    position: relative;
+    left: 37.5%;
+    width: 23%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#quote-marks {
+    position: relative;
+    left: 29.5%;
+    width: 14%;
+}
+
+#quote {
+    position: relative
+    left: 37.5%;
+    width: 23%;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#resume-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#resume-title {
+    position: absolute;
+    left: 41.5%;
+    text-align: center;
+}
+
+.icon ul, .icon li {
+    position: relative;
+    top: 0.1em;
+    left: 1em;
+    margin-right: 4em;
+}
+
+#face {
+    position: relative;
+    top: 4.7em;
+    text-align:center;
+    margin: 0 auto;
+    float: center;
+    width: 12em;   
+}
+
+#about-container {
+    text-align:center;
+    margin: 0 auto;
+    float: center;
+}
+
+#about-content {
+    top: 110%;
+    text-align:center;
+    margin: 0 auto;
+    float: center;
+}
+
+#about-title {
+    position: relative;
+    top: 1.5em;
+    text-align: center;
+}
+
+#about-description2 {
+    position: relative;
+    top: 4.8em;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    float: center;
+}
+
+#about-description {
+    position: relative;
+    top: 2.9em;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    float: center;
+}
+
+#space {
+    height: 6em;
+}
+
+#about-hr {
+    text-align:center;
+    margin: 0 auto;
+    float: center;
+    width: 36.8%;
+}
+
+#about-section {
+    position: relative;
+    top: 45em;
+    width: 100%;
+    height: 100%;
+}
+
+
+#projects-image {
+    position: relative;
+    top: 2em;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-titles {
+    letter-spacing: 0.07em;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: #547374;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+}
+
+#project2-title {
+    position: relative;
+    top: 16em;
+}
+
+#project2-description {
+    position: relative;
+    top: 20.5em;
+    width: 80%;
+    line-height: 220%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+}
+
+#view {
+    position: relative;
+    top: 3em;
+    width: 12em;
+    height: 2.7em;
+    line-height: 2.7em;
+    background: none;
+    border: 0.5px solid #A4C3C4;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #666664;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+}
+
+#project1-title {
+    position: relative;
+    top: 6em;
+}
+
+#project1-description {
+    position: relative;
+    top: 9.1em;
+    width: 80%;
+    line-height: 220%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+}
+
+#projects-title {
+    z-index: 2;
+    left: 8.3%;
+    color: #547374;
+    text-align: center;
+}
+
+#projects-hr {
+    position: relative;
+    top: -1em;
+    z-index: 1;
+    height: 0.06em;
+    width: 35%;
+    border: none;
+    text-align: center;
+}
+
+#projects-section {
+    position: absolute;
+    top: 90em;
+    width: 100%;
+    height: 100%;
+}
+
+#gif {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    bottom: -70.8%;
+    background-image: url("../images/rollercoaster.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#title {
+    position: absolute;
+    top: 5.2%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#subtitle {
+    position: relative;
+    margin-top: 3.5em;
+    font-family: 'Poppins', sans-serif;  
+    letter-spacing: 0.18em;
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+}
+
+#title-hr {
+    position: absolute;
+    top: 60%;
+    left: 31.67%;
+    width: 36.8%;
+    color: #D3D3D2;
+    background-color:#D3D3D2;
+}
+
+#name {
+    font-size: 2.8em;
+    color: #547374;
+    z-index: 1000;
+}
+
+#left {
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    width: 2%;
+    height: 100%;
+    background-color: white;
+}
+
+#right {
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    right: 0%;
+    width: 2%;
+    height: 100%;
+    background-color: white;
+}
+
+#header-back {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 6%;
+    background-color: white;
+}
+
+#header {
+    position: fixed;
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 6%;
+    background-color: white;
+}
