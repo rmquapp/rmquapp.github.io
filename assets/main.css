@@ -508,7 +508,7 @@ img {
         font-size: 108%;
     }
     #gif {
-        bottom: -23%;
+        bottom: -22%;
     }
 }
 
@@ -516,26 +516,17 @@ img {
     body {
         font-size: 118%;
     }
-    #gif {
-        bottom: -20%;
-    }
 }
 
 @media (min-width: 1550px) {
     body {
         font-size: 123%;
     }
-    #gif {
-        bottom: -17%;
-    }
 }
 
 @media (min-width: 1920px) {
     body {
         font-size: 128%;
-    }
-    #gif {
-        bottom: -15%;
     }
 }
 
@@ -563,8 +554,5 @@ only screen and (           min-resolution: 192dpi) and (min-device-width: 1440p
 only screen and (            min-resolution: 2dppx) and (min-device-width: 1440px) {
     body {
         font-size: 110%;
-    }
-    #gif {
-        bottom: -25%;
     }
 }
