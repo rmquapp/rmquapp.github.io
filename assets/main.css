@@ -128,7 +128,9 @@ img {
     top: -16%;
 }
 
-.resume-description {
+.resume-description  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 0.9em;
     line-height: 1.7;
     margin-top: -0.8em;
@@ -179,6 +181,8 @@ img {
     top: 33.5em;
     left: 37.5%;
     width: 23%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     margin: auto;
     text-align: center;
     font-size: 0.85em;
@@ -196,6 +200,8 @@ img {
     top: 22.8em;
     left: 37.5%;
     width: 23%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     margin: auto;
     text-align: center;
     font-size: 1em;
@@ -253,7 +259,7 @@ img {
 
 #view {
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 74.8%;
     width: 12.5em;
     height: 2.7em;
@@ -348,9 +354,8 @@ img {
     border: none;
 }
 
-#about-description {
+#about-description, #about-description2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.88em;
     font-weight: 300;
     line-height: 1.2em;
     text-align: left; 
@@ -535,7 +540,7 @@ only screen and (            min-resolution: 2dppx) and (min-device-width: 1025p
         font-size: 100%;
     }
     #gif {
-        bottom: -25.5%;
+        bottom: -26.5%;
     }
 }
 

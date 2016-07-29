@@ -136,6 +136,8 @@ img {
 .resume-description {
     position: relative;
     top: 2.4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 1em;
     line-height: 1.7;
     margin-top: -0.8em;
@@ -195,6 +197,8 @@ img {
 
 #author {
     width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     margin: auto;
     text-align: center;
     font-size: 0.85em;
@@ -212,6 +216,8 @@ img {
     position: relative;
     z-index: 1;
     width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     margin: auto;
     text-align: center;
     font-size: 1em;
@@ -272,6 +278,8 @@ img {
 #about-description2 {
     position: relative;
     top: 4.8em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     text-align: center;
     margin: 0 auto;
     width: 80%;
@@ -281,6 +289,8 @@ img {
 #about-description {
     position: relative;
     top: 2.9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     text-align: center;
     margin: 0 auto;
     width: 80%;
