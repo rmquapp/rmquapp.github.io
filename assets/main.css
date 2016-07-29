@@ -27,8 +27,8 @@ a {
 }
 
 p {
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: black;
 }
@@ -65,15 +65,15 @@ img {
 }
 
 #top-left-hr {
-    position: absolute;
-    top: 14em;
-    left: 22.6em;
+    position: relative;
+    top: 14.3em;
+    left: -9.15em;
 }
 
 #bottom-right-hr {
-    position: absolute;
-    top: 30.9em;
-    left: 36.4em;
+    position: relative;
+    top: 31.5em;
+    left: 5.8em;
 }
 
 .diag-hr {
@@ -91,7 +91,7 @@ img {
 
 #education-hr {
     position: absolute;
-    left: 0.9%;
+    left: 19%;
     height: 0.06em;
     border: none;
     color: #CACAC8;
@@ -99,14 +99,14 @@ img {
 }
 
 #education-title {
-    position: absolute;
+    position: relative;
     top: -21%;
 }
 
 #education-container {
-    position: absolute;
-    top: 182%;
-    left: 18%;
+    margin-top: 60em;
+    margin-left: 18%;
+    padding-bottom: 14%;
     width: 100%;
 }
 
@@ -124,7 +124,7 @@ img {
 }
 
 #work-title {
-    position: absolute;
+    position: relative;
     top: -16%;
 }
 
@@ -151,9 +151,9 @@ img {
 }
 
 #work-container {
-    position: absolute;
-    top: 105%;
-    left: 18%;
+    position: relative;
+    top: 50em;
+    margin-left: 18%;
     width: 100%;
 }
 
@@ -165,7 +165,7 @@ img {
 }
 
 .resume-titles {
-    position: absolute;
+    position: relative;
     left: 0.6em;
     font-size: 1.3em;
     letter-spacing: 0.07em;
@@ -210,10 +210,12 @@ img {
 
 #resume-section {
     position: relative;
-    top: 20em;
+    top: 60em;
     width: 100%;
-    padding-bottom: 50em;
-    margin: auto;
+    background-image: linear-gradient(
+        white, white, #F2F2F2, #F2F2F2
+    );
+    height: auto;
 }
 
 #projects-image {
@@ -307,10 +309,9 @@ img {
 
 #projects-section {
     position: relative;
-    top: 9em;
+    top: 55em;
     width: 100%;
-    height: 30%;
-    margin: auto;
+    height: 100%;
 }
 
 .fa.list {
@@ -364,14 +365,14 @@ img {
 
 #about-section {
     position: relative;
-    top: 10em;
+    top: 35em;
     width: 100%;
     height: 100%;
 }
 
 #title {
     position: absolute;
-    top: 5.2%;
+    top: 30%;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -397,8 +398,29 @@ img {
 
 #name {
     font-size: 2.5em;
+    font-weight: 300;
     color: #547374;
     z-index: 1000;
+}
+
+#home-section {
+    background-image: linear-gradient(
+        #E0EBEB, white 55%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#gif {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    bottom: -27.5%;
+    background-image: url("../images/rollercoaster.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #header-back {
@@ -451,37 +473,9 @@ img {
     visibility: hidden;
 }
 
-#middle {
-    position: absolute;
-    width: 100%;
-    height: 612.5%;
-}
-
-#gif {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    bottom: -27.5%;
-    background-image: url("../images/rollercoaster.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#everything {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-        #E0EBEB, white 9%, white, white, white, white, #F2F2F2, #F2F2F2
-    );
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 [class*="col-"] {
     float: left;
-    padding: 12px;
+    padding: 0.75em;
 }
 
 .row::after {
@@ -541,7 +535,7 @@ only screen and (            min-resolution: 2dppx) and (min-device-width: 1025p
         font-size: 100%;
     }
     #gif {
-        bottom: -27.5%;
+        bottom: -25.5%;
     }
 }
 

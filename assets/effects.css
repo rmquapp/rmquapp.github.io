@@ -1,6 +1,7 @@
 .item a::before,
 .item a::after {
     display: inline-block;
+    margin-right: 1em;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
     -moz-transition: -moz-transform 0.3s, opacity 0.2s;
@@ -32,18 +33,3 @@
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
-
-/*::-webkit-scrollbar {
-    width: 11px;
-    background: #FFF;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #FFF;
-    -webkit-border-radius: 1ex;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
-
-::-webkit-scrollbar-corner {
-    background: #FFF;
-}*/

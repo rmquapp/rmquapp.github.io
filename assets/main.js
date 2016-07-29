@@ -1,15 +1,16 @@
  $(function() {
     if (screen.width > 1000) {
         $.scrollify({
-            section: ".section",
-            sectionName: "section-name",
-            interstitialSection: "",
+            section : "section",
+            sectionName : "section-name",
+            interstitialSection : "",
             easing: "easeOutExpo",
             scrollSpeed: 1100,
-            offset: 0,
+            offset : 0,
             scrollbars: true,
             standardScrollElements: "",
             setHeights: true,
+            overflowScroll: true,
             before:function() {},
             after:function() {},
             afterResize:function() {},
@@ -41,15 +42,13 @@ $(function () {
 
 $(document).ready(function() {
     $(window).scroll(function() {
-        if (window.location.hash == "#resume") {
-            setTimeout(function() {
+        if (screen.width > 1000) {
+            if (window.location.hash == "#resume") {
                 document.getElementById("bottom").style.visibility = "visible";
-            }, 400);
-        }
-        else {
-            setTimeout(function() {
+            }
+            else {
                 document.getElementById("bottom").style.visibility = "hidden";
-            }, 5);
+            }
         }
     });
 });
