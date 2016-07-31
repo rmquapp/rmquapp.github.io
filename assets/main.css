@@ -66,14 +66,14 @@ img {
 
 #top-left-hr {
     position: relative;
-    top: 14.3em;
+    top: 11%;
     left: -9.15em;
 }
 
 #bottom-right-hr {
     position: relative;
-    top: 31.5em;
-    left: 5.8em;
+    top: 25%;
+    left: 7.7%;
 }
 
 .diag-hr {
@@ -104,7 +104,7 @@ img {
 }
 
 #education-container {
-    margin-top: 60em;
+    margin-top: 48em;
     margin-left: 18%;
     padding-bottom: 14%;
     width: 100%;
@@ -154,7 +154,7 @@ img {
 
 #work-container {
     position: relative;
-    top: 50em;
+    top: 38em;
     margin-left: 18%;
     width: 100%;
 }
@@ -178,7 +178,7 @@ img {
 
 #author {
     position: absolute;
-    top: 33.5em;
+    top: 22.5%;
     left: 37.5%;
     width: 23%;
     font-family: 'Open Sans', sans-serif;
@@ -190,15 +190,15 @@ img {
 
 #quote-marks {
     position: absolute;
-    top: 23em;
+    top: 17.9%;
     left: 29.5%;
     width: 14%;
 }
 
 #quote {
-    position: absolute;
-    top: 22.8em;
-    left: 37.5%;
+    position: relative;
+    top: 10.6%;
+    left: -1%;
     width: 23%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -209,8 +209,8 @@ img {
 }
 
 #resume-title {
-    position: absolute;
-    top: 4.7em;
+    position: relative;
+    top: 10.5%;
     left: 41.5%;
 }
 
@@ -226,7 +226,7 @@ img {
 
 #projects-image {
     position: absolute;
-    top: 9.3em;
+    top: 9.9em;
     left: 30%;
     width: 38%;
 }
@@ -299,7 +299,7 @@ img {
 #projects-title {
     position: absolute;
     z-index: 2;
-    top: 0.79em;
+    top: 0.9em;
     left: 8.3%;
     color: #547374;
 }
@@ -307,7 +307,7 @@ img {
 #projects-hr {
     position: absolute;
     z-index: 1;
-    top: 8.8em;
+    top: 9.1em;
     left: 8.5%;
     height: 0.06em;
     border: none;
@@ -332,8 +332,8 @@ img {
 }
 
 #about-container {
-    position: absolute;
-    top: 10.9em;
+    position: relative;
+    top: 24%;
     left: 17%;
     width: 99%;
 }
@@ -540,7 +540,7 @@ only screen and (            min-resolution: 2dppx) and (min-device-width: 1025p
         font-size: 100%;
     }
     #gif {
-        bottom: -26.5%;
+        bottom: -27.5%;
     }
 }
 
