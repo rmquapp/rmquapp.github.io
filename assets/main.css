@@ -422,7 +422,7 @@ img {
     z-index: 2;
     width: 100%;
     height: 100%;
-    bottom: -27.5%;
+    bottom: -25.5%;
     background-image: url("../images/rollercoaster.gif");
     background-repeat: no-repeat;
     background-size: contain;
@@ -540,7 +540,7 @@ only screen and (            min-resolution: 2dppx) and (min-device-width: 1025p
         font-size: 100%;
     }
     #gif {
-        bottom: -27.5%;
+        bottom: -25.5%;
     }
 }
 
