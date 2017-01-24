@@ -1,0 +1,237 @@
+body {
+    margin:0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.left {float:left}
+.right {float:right}
+.clear {clear:both}
+
+#homepage { 
+  background: url("../images/cat/cat2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#icon { 
+    float: left;
+    width: 3em;
+    opacity: 0.6;
+}
+
+ul.menu {
+    opacity: 0.6;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+#home {
+    background-color: #000;
+}
+
+li.menu {
+    float: left;
+}
+
+li.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#icon:hover {
+    opacity: 0.9;
+}
+
+a:hover:not(.active) {
+    opacity: 1;
+}
+
+#title {
+    position: relative;
+    top: 0.04em;
+    left: 1.2em;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 6em;
+    color: #FFFFFF;
+}
+
+#subtitle {
+    position: relative;
+    top: -2.5em;
+    left: 5.7em;
+    opacity: 0.8;
+    letter-spacing: 0.06em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+li.list {
+    font-size: 0.5em;
+}
+li.list span {
+    font-size: 1.9em;
+}
+
+#page {
+    opacity: 1;
+    background-color: #A50000;
+}
+
+#about_title {
+    position: relative;
+    top: 1.5em;
+    left: 2em;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color: #000;
+}
+
+#about_content {
+    width: 20em;
+    position: relative;
+    margin-top: 10em;
+    margin-left: 13em;  
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+#starlord {
+    margin-top: 7.5em;
+    margin-left: 8em;
+    height: 14em;
+}
+
+
+#baby {
+    margin-left: 7em;
+    margin-top: 8em;
+    height: 14.95em;
+}
+
+#research_content {
+    position: relative;
+    margin-top: 2.5em;
+    margin-left: 4em;  
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: black;
+}
+
+table {
+    position: relative;
+    top: 2em;
+    left: 4em;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+        font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4EB2D1;
+    color: white;
+}
+
+#cat_dog {
+    margin-left: 7em;
+    margin-top: 9em;
+    height: 10em;
+}
+
+#cat_dog2 {
+    margin-left: 1em;
+    margin-top: 9em;
+    height: 10em;
+}
+
+#worm {
+    margin-left: 1em;
+    margin-top: 9em;
+    height: 10em;
+}
+
+#gallery_title {
+    position: relative;
+    top: 1.7em;
+    left: 1.5em;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color: #000;
+}
+
+.gallery {
+  margin: 0 auto;
+  padding: 15px;
+  background: #fff;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.4,1.4);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
