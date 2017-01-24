@@ -2,7 +2,7 @@ body {
     margin:0;
 }
 
-html, body {
+html.noscroll, body.noscroll {
     max-width: 100%;
     overflow-x: hidden;
 }
