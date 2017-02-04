@@ -1,0 +1,96 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../assets/styles.css">
+<title>SENG513W17 Assignment 2</title>
+<div id="wrapper">
+    <div id="form">
+        <div class="header">Enter or Paste Your Text</div>
+        <textarea id="txtarea">Sample text.</textarea>
+        <div class="buttons">
+            <button id="button-submit" title="Compute stats">Compute Stats</button>
+            <div class="hspacer"></div>
+            <button id="button-clear" title="Clear text">Clear</button>
+            <button id="button-ex1" title="Lorem ipsum">Ex1</button>
+            <button id="button-ex2" title="Basic example">Ex2</button>
+            <button id="button-ex3" title="Nasty example">Ex3</button>
+        </div>
+        <div class="header">Results</div>
+        <pre id="results">Your results will appear here.</pre>
+    </div>
+</div>
+
+<script>
+    (function () {
+        let entityMap = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;',
+            '/': '&#x2F;',
+            '`': '&#x60;',
+            '=': '&#x3D;'
+        };
+
+        function escapeHtml(string) {
+            return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+                return entityMap[s];
+            });
+        }
+
+        function onload() {
+            let resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = "Click";
+            let txtArea = document.getElementById('txtarea');
+
+            document.getElementById("button-submit").onclick = function () {
+                res = getStats(txtArea.value);
+                res = JSON.stringify(res, null, 4);
+                res = escapeHtml(res);
+                resultsDiv.innerHTML = res;
+            }
+
+            document.getElementById("button-clear").onclick = function () {
+                txtArea.value = "";
+                txtArea.focus();
+                return false;
+            }
+
+            document.getElementById("button-ex1").onclick = function () {
+                txtArea.value = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                    "Vivamus pharetra dolor mi. Etiam laoreet bibendum quam ut cursus.\n" +
+                    "Pellentesque in efficitur purus, nec molestie sapien. Duis interdum\n" +
+                    "orci quis turpis auctor molestie. Cum sociis natoque penatibus et magnis\n" +
+                    "dis parturient montes, nascetur ridiculus mus. Nullam tristique vulputate\n" +
+                    "cursus. Sed vulputate ex ac ex congue, sit amet iaculis massa pretium.\n";
+            }
+
+            document.getElementById("button-ex3").onclick = function () {
+                txtArea.value = "" +
+                    "   This is a tough example, you have been warned.    \n" +
+                    "           \t       \n" +
+                    "The line above is empty!\n" +
+                    "            Here are some palindromes: Anna, kayak and racecar. " +
+                    "Here are 3 more palindromes: Madam+civiC+noon:-)\n\n" +
+                    "    Numeric palindromes are also possible: 1234321 is one of them...\n" +
+                    "        Make  sure you handle  spaces  properly         .   !!!\n" +
+                    "\n" +
+                    "        Do you like long words? Antidisestablishmentarianism is a pretty famous one.\n" +
+                    "        So is this one: \"xxxxxxxxxxxxxxxxxxxxxxxxxxxx\" and it is also a palindrome." +
+                    " It is as long as Antidisestablishmentarianism.\n" +
+                    "\n        Yup, that's a word using our definition.\n" +
+                    "\n" +
+                    "    I am inserting some palindromes\n" +
+                    "\n" +
+                    "wow, this is a nasty example, isn't it?\n" +
+                    "Let's add one last line, this one does not have \\n";
+            }
+
+            document.getElementById("button-ex2").onclick = function () {
+                txtArea.value = "word1 word22 word333 word4444 word55555 word4444 word333 word22 word1";
+            }
+        }
+        
+        window.onload = onload();
+    })();
+</script>
+<script src="../assets/code.js"></script>
